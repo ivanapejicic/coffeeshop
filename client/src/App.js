@@ -1,21 +1,16 @@
 import './App.scss';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './assets/pages/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Visit my linkedin profile and learn about me
-        </p>
-        <a
-          className="App-link"
-          href="https://www.linkedin.com/in/ivanapejicic/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ivana Pejicic
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path= '' element={<Home />} />
+
+        </Routes>      
+      </BrowserRouter>
     </div>
   );
 }
