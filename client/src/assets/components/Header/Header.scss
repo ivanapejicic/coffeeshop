@@ -7,15 +7,12 @@
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    text-align: start;
-
+    position: fixed;
     &__logo {
-        width: 20%;
-        height: 5%;
+        width: 12%;
 
         @include tablet {
             width: 13%;
-            height: 5%;
         }
     }
 
@@ -24,6 +21,10 @@
         align-items: baseline;
         gap: 1rem;
         font-size: 1rem;
+
+        @include tablet {
+            font-size: 1.2rem;
+        }
         &-a {
             color: white;
             text-decoration: none;
