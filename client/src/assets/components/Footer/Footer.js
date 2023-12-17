@@ -1,20 +1,21 @@
 import './Footer.scss';
+import { Link } from 'react-router-dom';
 
 function Footer(){
     return(
         <div className='footer'>
-            <div className='footer__container'>
+            <Link className='footer__container' to='/menu'>
                 <div className='footer__container-logo'>☕️</div>
                 <div className='footer__container-text'>MENU</div>
-            </div>
-            <div className='footer__container'>
+            </Link>
+            <Link className='footer__container' to='/contact'>
                 <div className='footer__container-logo'>📞</div>
                 <div className='footer__container-text'>CALL US</div>
-            </div>
-            <div className='footer__container'>
+            </Link>
+            <Link className='footer__container' to = "/address">
                 <div className='footer__container-logo'>📍</div>
                 <div className='footer__container-text'>LOCATION</div>
-            </div>
+            </Link>
         </div>
     )
 }
