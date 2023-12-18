@@ -1,0 +1,27 @@
+@use '../../styles/partials/mixin' as *;
+@use '../../styles/partials/typograpy.scss' as *;
+@use '../../styles/partials/variables' as *;
+
+.menu-page{
+    background-color: black;
+    text-align: center;
+}
+.title{
+    color: white;
+    padding: 2rem 0;
+
+}
+.menu {
+    text-align: center;
+    background-color: $cafe-yellow;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 1rem 2rem;
+
+        @include tablet {
+            margin: 1rem 4rem;
+        }
+    }
+}
