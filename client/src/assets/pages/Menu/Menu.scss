@@ -21,19 +21,37 @@
         padding: 1rem 0 .3rem;
     }
 
+    &__description{
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-bottom: solid .15rem black;
+    }
+
     &__item {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: .75rem 0;
-        &-title {
-            width: 20%;
+        padding-bottom: .5rem;
+        border-bottom: .15rem dotted black;
+
+        &-title1 {
+            width: 30%;
+            text-align: left;
+        }
+        &-title2 {
+            width: 15%;
+            text-align: right;
         }
 
         &-description {
             font-size: .75rem;
             padding: 0 0.5rem;
             width: 50%;
+
+            @include tablet {
+                font-size: .85rem;
+            }
         }
 
         @include tablet {
