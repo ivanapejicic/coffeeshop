@@ -2,29 +2,52 @@
 @use '../../styles/partials/typograpy.scss' as *;
 @use '../../styles/partials/variables' as *;
 
-.menu-page{
+.menu-page {
     background-color: black;
     text-align: center;
-}
-.title{
-    color: white;
-    font-weight: 400;
-    padding: 2rem 0;
 
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+
+        &-title {
+            color: white;
+            font-weight: 400;
+            margin: 0 auto; 
+        }
+
+        &-logo{
+            width: 15%;
+            margin-left: 2rem;
+
+            @include tablet {
+                width: 12%;
+                margin: 0 8rem;
+
+            }
+        }
+    }
 }
+
 .menu {
     text-align: center;
     background-color: $cafe-yellow;
     padding: 1rem;
 
-    &__title{
+    &__title {
         padding: 1rem 0 .3rem;
     }
 
-    &__description{
+    &__description {
         padding-bottom: 1rem;
-        margin-bottom: 2rem;
+        margin: 1rem 1rem 2rem 1rem;
         border-bottom: solid .15rem black;
+
+        @include tablet {
+            margin: 1rem 8rem;
+        }
+
     }
 
     &__item {
@@ -39,6 +62,7 @@
             width: 30%;
             text-align: left;
         }
+
         &-title2 {
             width: 15%;
             text-align: right;
@@ -55,7 +79,7 @@
         }
 
         @include tablet {
-            margin: 1rem 10rem;
+            margin: 1rem 8rem;
         }
     }
 }
