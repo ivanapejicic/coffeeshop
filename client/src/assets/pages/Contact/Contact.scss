@@ -32,4 +32,11 @@
     &__img {
         width: 70%;
     }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+    }
 }
