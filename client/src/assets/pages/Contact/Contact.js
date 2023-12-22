@@ -24,7 +24,7 @@ function Contact() {
 
                 <textarea className='contact__form-area' id='message' name='message' placeholder='Your message'></textarea>
 
-                <button type='submit'>Submit</button>
+                <button className='contact__form-button' type='submit'>SUBMIT</button>
             </form>
         </div>
     )
