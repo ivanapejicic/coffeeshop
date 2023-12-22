@@ -46,12 +46,19 @@
 
         &-field{
             width: 70%;
-            height: 2rem;;
+            height: 2.5rem;
+            padding-left: .5rem;
+            margin: 1rem;
         }
 
         &-area{
             width: 70%;
             height: 4rem;
+            margin: 1rem;
+            padding: .5rem;
+
+
         }
+        
     }
 }

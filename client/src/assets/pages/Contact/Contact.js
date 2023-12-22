@@ -16,17 +16,13 @@ function Contact() {
             <img className='contact__img' src={beignet} alt="Beignet with powdered sugar on top"></img>
             <h1 className='contact__title'>CONTACT</h1>
             <form className='contact__form' onSubmit={handleSubmit}>
-                <label htmlFor='name'>Name *</label>
-                <input className='contact__form-field' type='text' id='name' name='name' required />
+                <input className='contact__form-field' type='text' id='name' name='name' placeholder='Your name (required)' required />
 
-                <label htmlFor='email'>Email *</label>
-                <input className='contact__form-field' type='email' id='email' name='email' required />
+                <input className='contact__form-field' type='email' id='email' name='email' placeholder='Your email (required)' required />
 
-                <label htmlFor='subject'>Subject</label>
-                <input className='contact__form-field' type='text' id='subject' name='subject' />
+                <input className='contact__form-field' type='text' id='subject' placeholder='Subject' name='subject' />
 
-                <label htmlFor='message'>Message</label>
-                <textarea className='contact__form-area' id='message' name='message'></textarea>
+                <textarea className='contact__form-area' id='message' name='message' placeholder='Your message'></textarea>
 
                 <button type='submit'>Submit</button>
             </form>
