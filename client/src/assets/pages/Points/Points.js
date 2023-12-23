@@ -9,6 +9,9 @@ function Points() {
                 <h1 className='contact__top-title'>OUR REWARD PROGRAM</h1>
                 <img className='contact__top-logo' src={logo} alt="cafe beignet's logo"></img>
             </div>
+            <div className='points__main'>
+                <h1>Cage Beignet points</h1>
+            </div>
         </div>
     )
 }
