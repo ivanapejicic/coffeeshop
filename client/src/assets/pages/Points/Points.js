@@ -11,6 +11,11 @@ function Points() {
             </div>
             <div className='points__main'>
                 <h1>Cage Beignet points</h1>
+                <div className='points__main-rules'>
+                    <h2 className='points__main-rules__title'>EVERY</h2>
+                    <h4 className='points__main-rules__content'>$1 = 1 POINT | 50 POINTS = $5 OFF</h4>
+                </div>
+                <button className='points__main-button'>SIGN UP OR LOG IN</button>
             </div>
         </div>
     )
