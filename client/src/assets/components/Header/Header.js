@@ -9,7 +9,7 @@ function Header() {
             <div className='header__nav'>
                 <Link className='header__nav-a' to = '/about'>ABOUT</Link>
                 <Link className='header__nav-a' to = '/menu'>MENU</Link>
-                <Link className='header__nav-a' to ='https://ppolepizza.com/p-pole-points/'>POINTS</Link>
+                <Link className='header__nav-a' to ='/points'>POINTS</Link>
                 <Link className='header__nav-a' to='/contact'>CONTACT</Link>
                 <Link className='header__nav-a2' to='/order'>ORDER NOW</Link>
 
