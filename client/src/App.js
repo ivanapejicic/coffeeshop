@@ -4,6 +4,7 @@ import Home from './assets/pages/Home/Home';
 import Menu from './assets/pages/Menu/Menu';
 import Contact from './assets/pages/Contact/Contact';
 import Points from './assets/pages/Points/Points';
+import Login from './assets/pages/Login/Login';
 
 function App() {
   return (

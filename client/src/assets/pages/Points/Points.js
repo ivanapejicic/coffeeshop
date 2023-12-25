@@ -1,5 +1,6 @@
 import './Points.scss';
 import logo from '../../icons/logoBY.png';
+import { Link } from 'react-router-dom';
 
 function Points() {
     return (
@@ -15,7 +16,7 @@ function Points() {
                     <h2 className='points__main-rules__title'>EVERY</h2>
                     <h4 className='points__main-rules__content'>$1 = 1 POINT | 50 POINTS = $5 OFF</h4>
                 </div>
-                <button className='points__main-button'>SIGN UP OR LOG IN</button>
+                <Link to='/login'><button className='points__main-button'>SIGN UP OR LOG IN</button></Link>
             </div>
         </div>
     )
