@@ -1,4 +1,6 @@
 import './Login.scss';
+import login from '../../icons/passkey_FILL0_wght400_GRAD0_opsz24.svg';
+import arrowBack from '../../icons/arrow_back_FILL0_wght400_GRAD0_opsz24.svg';
 import { useNavigate, Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
@@ -17,7 +19,6 @@ function Login() {
         })
             .then((response) => {
                 sessionStorage.setItem('token', response.data.token)
-                navigate('/rides')
             })
             .catch((error) => {
                 setError("Invalid credentials. Please try again.");
