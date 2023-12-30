@@ -1,5 +1,10 @@
-const router = require('express').Router();
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const authorize = require('../middleware/authorize');
-const knex = require('knex')(require('../knexfile'));
+const express = require('express');
+const router = express.Router();
+const pointsController = require('../controllers/points-controller');
+
+router
+    .route('/')
+    .get(pointsController.getPoints)
+    .post(pointsController.add);
+    
+module.exports = router;
