@@ -37,6 +37,38 @@ const findOne = async (req, res) => {
     }
 };
 
+const addUser = async (req, res) => {
+    const { phone } = req.body;
+
+    try {
+        const existingUser = await knex("points").where({ phone });
+
+        if (existingUser && existingUser.length > 0) {
+            return res.status(400).json({
+                message: `User with phone number ${phone} already exists`,
+            });
+        }
+
+        const newUser = {
+            phone,
+            points: 0,
+        };
+
+        await knex("points").insert(newUser);
+
+        return res.status(201).json({
+            message: `New user added with phone number ${phone}`,
+            user: newUser,
+        });
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).json({
+            message: `Unable to add new user with phone number ${phone}`,
+        });
+    }
+};
+
 module.exports = {
-    findOne
+    findOne,
+    addUser,
 };
