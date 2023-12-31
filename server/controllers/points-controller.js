@@ -20,11 +20,11 @@ const validatePhoneNumber = (data) => {
 
 const findOne = async (req, res) => {
     try {
-        const userFound = await knex("points").where({ phone: req.params.phone });
+        const userFound = await knex("points").where({ phone: req.params.points });
 
         if (!userFound || userFound.length === 0) {
             return res.status(404).json({
-                message: `User with phone number ${req.params.phone} not found`
+                message: `User with phone number ${req.params.points} not found`
             });
         }
 
@@ -32,7 +32,7 @@ const findOne = async (req, res) => {
         res.json(userData);
     } catch (error) {
         res.status(500).json({
-            message: `Unable to retrieve user data for user with phone number ${req.params.phone}`,
+            message: `Unable to retrieve user data for user with phone number ${req.params.points}`,
         });
     }
 };
